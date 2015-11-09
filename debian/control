@@ -1,0 +1,21 @@
+Source: qf9700
+Section: kernel
+Priority: optional
+Maintainer: Pau Garcia i Quiles <pgquiles@elpauer.org>
+Build-Depends: debhelper (>= 9), dkms, dh-modaliases
+Standards-Version: 3.9.6.1
+Homepage: http://www.genoasys.com
+Vcs-Git: https://github.com/pgquiles/qf9700.git
+Vcs-Browser: https://github.com/pgquiles/qf9700.git
+
+Package: qf9700-dkms
+Architecture: all
+Depends: ${misc:Depends}, dkms, linux-libc-dev, libc6-dev
+XB-Modaliases: ${modaliases}
+Description: dkms source for the qf9700 network driver
+ qf9700 is the Linux device driver released for the Genoa Systems QF9700
+ USB2NET USB network adapter. This device is wired internally in many
+ cheap miniPCs and Android TV boxes.
+ .
+ This package provides the dkms source code for the QF9700 kernel module.
+ Kernel source or headers are required to compile these modules.

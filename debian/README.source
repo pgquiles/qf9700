@@ -1,0 +1,19 @@
+The source code for the Genoa QF9700 USB2NET adapter was included in a CDROM 
+which came with the device. It was made available for download at
+https://www.etherbyte.net/drivers.zip
+
+That code for for kernel 2.6.32 and of course did not compile with modern (4.x) 
+kernels. Following:
+
+https://eyesonly666.wordpress.com/2012/10/15/compiling-linux-drivers-for-rd9700-qf9700-ko-under-debian-squeeze/
+
+updated sources were downloaded from:
+
+http://mquin.livejournal.com/178482.html
+
+http://forum.xda-developers.com/showthread.php?p=30273196
+
+That code did not compile either with kernel 4.3.0, which made necessary
+a little patch:
+
+http://www.linuxquestions.org/questions/slackware-14/compiling-broadcom-driver-947294/#post4689850
